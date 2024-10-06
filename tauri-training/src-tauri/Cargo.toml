@@ -12,11 +12,16 @@ name = "tauri_training_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0.0-rc", features = [] }
+# https://crates.io/crates/tauri-build/versions
+tauri-build = "2.0.1"
 
 [dependencies]
-tauri = { version = "2.0.0-rc", features = [] }
-tauri-plugin-shell = "2.0.0-rc"
+# https://crates.io/crates/tauri/versions
+tauri = { version = "2.0.1" }
+
+# https://crates.io/crates/tauri-plugin-shell/versions
+tauri-plugin-shell = "2.0.1"
+
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 
